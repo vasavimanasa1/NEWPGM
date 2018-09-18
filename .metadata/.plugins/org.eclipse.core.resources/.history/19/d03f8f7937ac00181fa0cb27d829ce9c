@@ -1,0 +1,27 @@
+package jAVA;
+
+import java.util.Scanner;
+
+public class Primenumber
+{
+	public static void main(String[] args)
+	{
+		//palindrome means the number should be same when it reverse also
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the range");
+		int r=s.nextInt();
+		int i;
+		for(int i=2;i<r;i++)
+		if(r%i==0)
+			break;
+			if(i==r)
+			
+				System.out.println("The given number is not prime");
+
+			
+			else
+				System.out.println("Not prime");
+		
+	}
+
+}

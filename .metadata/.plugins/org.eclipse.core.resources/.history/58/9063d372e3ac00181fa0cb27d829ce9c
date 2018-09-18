@@ -1,0 +1,12 @@
+package jAVA;
+
+public class SwapString {
+
+	public static void main(String[] args) 
+	{
+		String s1="manasa";
+		String s2="Krishna";
+		
+	}
+
+}

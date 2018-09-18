@@ -1,0 +1,13 @@
+package jAVA;
+
+public class SwapString {
+
+	public static void main(String[] args) 
+	{
+		String s1="manasa";
+		String s2="Krishna";
+		s1=s1+s2;
+		System.out.println("After concatinating"+s1);
+	}
+
+}

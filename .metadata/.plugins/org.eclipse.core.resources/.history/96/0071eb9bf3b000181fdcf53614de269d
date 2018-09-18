@@ -1,0 +1,14 @@
+package com.selenium.testng;
+
+public class AnnotationsOrder 
+{
+	@BeforeSuite
+	@AfterSuite
+	@BeforeClass
+	@AfterClass
+	@BeforeMethod
+	@AfterMethod
+	@Test
+	
+
+}

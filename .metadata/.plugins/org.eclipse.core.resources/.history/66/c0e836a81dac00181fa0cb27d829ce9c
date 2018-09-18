@@ -1,0 +1,15 @@
+package jAVA;
+
+import java.util.Scanner;
+
+public class Palindrome {
+
+	public static void main(String[] args)
+	{
+		//palindrome means the number should be same when it reverse also
+		Scanner s=new Scanner(System.in);
+		int s1=s.nextInt();
+		
+	}
+
+}

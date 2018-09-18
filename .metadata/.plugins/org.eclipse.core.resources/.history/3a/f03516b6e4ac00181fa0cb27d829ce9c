@@ -1,0 +1,17 @@
+package jAVA;
+
+import java.util.Scanner;
+
+public class StringRev {
+
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		String str=s.nextLine();
+		System.out.println("The original string is:: "+str);
+		
+	
+
+	}
+
+}

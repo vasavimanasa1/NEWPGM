@@ -1,0 +1,16 @@
+package jAVA;
+
+import java.util.Scanner;
+
+public class Primenumber
+{
+	public static void main(String[] args)
+	{
+		//palindrome means the number should be same when it reverse also
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the range");
+		int r=s.nextInt();
+		
+	}
+
+}
