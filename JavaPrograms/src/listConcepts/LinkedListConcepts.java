@@ -21,7 +21,8 @@ public class LinkedListConcepts {
 	ll.remove(3);
 	System.out.println(ll);
 	System.out.println(ll.getLast());
-
+	System.out.println("through index");
+System.out.println(ll.get(0));
 	
 	System.out.println("Using for each loop************");
 	for(String str:ll)

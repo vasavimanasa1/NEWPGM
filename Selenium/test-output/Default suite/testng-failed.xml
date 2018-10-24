@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.testng.Irctc">
+      <class name="com.selenium.alltopics.ExampleSite">
         <methods>
-          <include name="open"/>
-          <include name="test1"/>
+          <include name="ExampleSite"/>
+          <include name="Start"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.selenium.testng.Irctc -->
+      </class> <!-- com.selenium.alltopics.ExampleSite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

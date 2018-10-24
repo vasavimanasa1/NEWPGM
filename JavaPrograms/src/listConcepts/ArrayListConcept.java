@@ -21,6 +21,7 @@ public class ArrayListConcept
 	Object obj[]=new Object[5];
 	obj[0]="manasa";
 	obj[1]=1;
+	obj[2]='m';
 	for(int k=0;k<obj.length;k++)
 	{
 		System.out.println(obj[k]);
@@ -33,6 +34,7 @@ public class ArrayListConcept
 	al.add(400);
 	al.add("manasa");
 	al.add(400);
+	al.add(600);
 	
 	System.out.println(al.size());
 	System.out.println("$$$$$$$$$$$$$$$");
@@ -41,10 +43,11 @@ public class ArrayListConcept
 	{
 		System.out.println(al.get(p));
 	}
-	System.out.println(al.get(2));
+	System.out.println("*****");
+	System.out.println(al.get(3));
 	
 	//********************************************Generics
-	ArrayList<String> ars=new ArrayList();
+	ArrayList<String> ars=new ArrayList<String>();
 	System.out.println("*****************generics******");
 	ars.add("Manasa");
 	ars.add("arjun");
