@@ -19,12 +19,12 @@ public class JDBC
 		 System.out.println(conn);
 		 
 		 Statement stmt=conn.createStatement();
-		 ResultSet rs=stmt.executeQuery("select * from student");
+		 ResultSet rs=stmt.executeQuery("select * from employee");
 		 System.out.println("Statement created");
 		 System.out.println("Query executed");
 		 while(rs.next())
 		 {
-			 System.out.println("  sname is:  "+rs.getString("sname")+" Phone:"+rs.getInt("phone")+" Location:"+rs.getString("location"));
+			 System.out.println("  sname is:  "+rs.getString("ename")+" Phone:"+rs.getInt("esal")+" Location:"+rs.getString("dept"));
 		 }
 		}
 		

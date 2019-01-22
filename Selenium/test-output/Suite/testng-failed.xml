@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.selenium.alltopics.HandlingFrames2">
+        <methods>
+          <include name="Start"/>
+          <include name="handlingframes"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.selenium.alltopics.HandlingFrames2 -->
+      <class name="com.selenium.alltopics.HandlingMouseEvents">
+        <methods>
+          <include name="mousehandling"/>
+          <include name="Start"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.selenium.alltopics.HandlingMouseEvents -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -6,13 +6,15 @@ public class Variables
 	String s="Arjun";//Nonstatic string variable
 	
 	static int c=60,d=10,k;//Static variable
-	static String s1="manasa";//Static String variable
+	static String s1="manasa",s2;//Static String variable
 	
+	Variables v;
 	public static int add()
 	{
 		k=c+d;
 		return k;
 		//System.out.println("Addition of static variables is::"+k);
+		
 		
 	}
 	public int substraction()//nonstatic method
@@ -33,6 +35,9 @@ public class Variables
         System.out.println(sv.add());
         System.out.println(sv.s);
         System.out.println(sv.s1);
+        System.out.println(s2);
+        System.out.println(sv.v);
+        
 	}
 
 }

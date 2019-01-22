@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.alltopics.ExampleSite">
+      <class name="com.selenium.Practice.PrintFooterLinks">
         <methods>
-          <include name="ExampleSite"/>
+          <include name="footerLinks"/>
           <include name="Start"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.selenium.alltopics.ExampleSite -->
+      </class> <!-- com.selenium.Practice.PrintFooterLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

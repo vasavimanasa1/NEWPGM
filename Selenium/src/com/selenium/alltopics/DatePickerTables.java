@@ -16,14 +16,15 @@ public class DatePickerTables extends BaseClass
 		d.switchTo().frame(0);
 		d.findElement(By.id("datepicker")).click();
 		Thread.sleep(3000);
-		
+	
 		List<WebElement> totalElmts=d.findElements(By.xpath("//div[@id='ui-datepicker-div']"));
 		int nodes=totalElmts.size();
-		System.out.println(nodes);
-		for(int i=0;i<=nodes;i++)
+		System.out.println("total nodes are"+nodes);
+		
+		for(int i=0;i<nodes;i++)
 		{
 			String dt=totalElmts.get(i).getText();
-			if(dt.equalsIgnoreCase("24"))
+			if(dt.equalsIgnoreCase("30"))
 			{
 				totalElmts.get(i).click();
 				break;
@@ -32,6 +33,7 @@ public class DatePickerTables extends BaseClass
 		Thread.sleep(2000);
 		
 	}
+		Thread.sleep(2000);
 }
 	
 }

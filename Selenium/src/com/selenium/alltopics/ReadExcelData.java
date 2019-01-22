@@ -36,13 +36,15 @@ public static void Import() throws IOException, Exception
 	{
 		//d.findElement(By.id("tags")).sendKeys(s.getCell(0, i).getContents());
 		
-	Thread.sleep(2000);
+		Thread.sleep(2000);
 	
-		for(int j=1;j<s.getColumns();j++)
+		for(int j=0;j<s.getColumns();j++)
 {
 			Thread.sleep(2000);
 		d.findElement(By.id("tags")).clear();
 		d.findElement(By.id("tags")).sendKeys(s.getCell(j, i).getContents());
+		
+		
 }
 
 	}

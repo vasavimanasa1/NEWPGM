@@ -8,6 +8,7 @@ public class DataTypes
 	byte b;//non static global
 	long l;//non static global
 	char c=65;//non static global
+	String s1;
 	static int p;
 	static short ss;
 	static byte sb;
@@ -29,7 +30,7 @@ public class DataTypes
 		System.out.println(dt.l);
 		System.out.println(dt.c);
 		
-		
+		System.out.println(dt.s1);
 		System.out.println("STATIC VARIABLES ACCESSING");
 		
 		System.out.println(p);

@@ -15,8 +15,10 @@ public class HandlingWindows extends BaseClass
 		d.get("https://www.irctc.co.in/eticketing/loginHome.jsf");
 		System.out.println(d.getTitle());
 		d.findElement(By.xpath("//a[text()=' FLIGHTS ']")).click();
+		
+		
 		Set<String> h=d.getWindowHandles();
-		System.out.println(h.size());
+		System.out.println("no of windows are  "+h.size());
 		String handle[]=new String[h.size()];
 		int i=0;
 		for(String s:h)

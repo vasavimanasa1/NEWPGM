@@ -19,7 +19,7 @@ public class BaseClass
 		d.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 		d.manage().timeouts().pageLoadTimeout(5000,TimeUnit.SECONDS);
 		
-		
+				
 	}
 
 	@AfterMethod

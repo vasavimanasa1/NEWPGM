@@ -14,8 +14,12 @@ public class AutoCompleteSugges  extends BaseClass
 	{
 		d.get("https://www.google.com/");
 		d.findElement(By.id("lst-ib")).sendKeys("indi");
+		
+		
 		List<WebElement> l=d.findElements(By.xpath("//div[@class='sbqs_c']"));
 		System.out.println(l.size());
+		
+		
 		for(WebElement f:l)
 		{
 			
@@ -24,8 +28,9 @@ public class AutoCompleteSugges  extends BaseClass
 			if(f.getText().equals("indian army"))
 			{
 				d.findElement(By.xpath("//div[@class='sbqs_c']")).sendKeys(Keys.ENTER);
-				//Thread.sleep(2000);
+				Thread.sleep(2000);
 				d.findElement(By.linkText("ADG PI - INDIAN ARMY (@adgpi) · Twitter")).click();
+				Thread.sleep(2000);
 			}
 		}
 	

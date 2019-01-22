@@ -19,6 +19,7 @@ public class XpathsinWebDriver {
 		
 		System.setProperty("webdriver.gecko.driver", "F:\\selenium\\Drivers\\geckodriver.exe");
 		WebDriver	d=new FirefoxDriver();
+		//WebDriver	d=new FirefoxDriver();
 		d.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
 		
@@ -29,32 +30,45 @@ public class XpathsinWebDriver {
 		d.findElement(By.className("form-control inputTxtLarge widgetCalenderTxt")).click();;
 */
 		d.get("https://www.google.com/");
-		d.findElement(By.xpath("//input[@id='lst-ib']")).sendKeys("sele");
+		System.out.println("*************");
+		System.out.println(d.findElement(By.xpath("//input[@name='q']")).getAttribute("name"));
+		
+		Thread.sleep(2000);
+		d.findElement(By.xpath("//input[@name='q']")).sendKeys("sele");
+		
 		System.out.println("*****************");
 		
-		List<WebElement> li=d.findElements(By.xpath("//ul[@class='sbsb_b']/li"));
-		String str[]=new String[li.size()];
-		System.out.println("The suggessions are....");
-		int i=0;
+		List<WebElement> li=d.findElements(By.xpath("//ul[@class='erkvQe']/li"));
+		//String str[]=new String[li.size()];
+		System.out.println("The suggessions are...."+li.size());
+		//int i=0;
 		for(WebElement s:li)
 		{
 			System.out.println(s.getText());
-			str[i]=s.getText();
-			i++;
+			//str[i]=s.getText();
+			//i++;
+			d.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.ARROW_DOWN);
+			if(s.getText().equals("selenium download"))
+			{
+				d.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.ENTER);
+			
+			break;
+			}
 					
 		}
-		for(String t:str) 
+		
+		/*for(String t:str) 
 		{
-			d.findElement(By.xpath("//input[@id='lst-ib']")).sendKeys(Keys.ARROW_DOWN);
+			d.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.ARROW_DOWN);
 			if(t.equals("selenium"))
 			{
-				d.findElement(By.xpath("//input[@id='lst-ib']")).sendKeys(Keys.ENTER);
+				d.findElement(By.xpath("//input[@name='q']")).sendKeys(Keys.ENTER);
 				break;
 			}
 			Thread.sleep(2000);
 		}
-		
-				
+		*/
+		d.quit();		
 	}
 
 }

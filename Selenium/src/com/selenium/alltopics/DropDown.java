@@ -18,9 +18,12 @@ public class DropDown  extends BaseClass
 		d.findElement(By.id("email")).sendKeys("manasa");
 		d.findElement(By.id("pass")).sendKeys("manasaaa");
 		
-		d.findElement(By.xpath("//input[@name='firstname']")).sendKeys("vasavi");
+		d.findElement(By.xpath("//input[@name='firstname']")).sendKeys("vasavi"); 
+		String uk=d.findElement(By.xpath("//input[@name='firstname']")).getAttribute("name");
+		System.out.println("The attribute is::"+uk);
 		d.findElement(By.xpath("//input[@name='lastname']")).sendKeys("thallapaka");
 		d.findElement(By.xpath("//input[@name='reg_email__']")).sendKeys("3625487855");
+		System.out.println("Current url is"+d.getCurrentUrl());
 		
 		
 		Select s = new Select(d.findElement(By.id("day")));

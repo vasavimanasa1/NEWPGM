@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="91751" started-at="2018-10-23T11:12:34Z" finished-at="2018-10-23T11:14:06Z">
+  <suite name="Default suite" duration-ms="76850" started-at="2019-01-21T07:08:53Z" finished-at="2019-01-21T07:10:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="91751" started-at="2018-10-23T11:12:34Z" finished-at="2018-10-23T11:14:06Z">
-      <class name="com.selenium.alltopics.ExampleSite">
-        <test-method status="PASS" signature="Start()[pri:0, instance:com.selenium.alltopics.ExampleSite@56f4468b]" name="Start" is-config="true" duration-ms="15016" started-at="2018-10-23T16:42:34Z" finished-at="2018-10-23T16:42:49Z">
+    <test name="Default test" duration-ms="76850" started-at="2019-01-21T07:08:53Z" finished-at="2019-01-21T07:10:09Z">
+      <class name="com.selenium.Practice.PrintFooterLinks">
+        <test-method status="PASS" signature="Start()[pri:0, instance:com.selenium.Practice.PrintFooterLinks@548a9f61]" name="Start" is-config="true" duration-ms="17381" started-at="2019-01-21T12:38:53Z" finished-at="2019-01-21T12:39:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Start -->
-        <test-method status="PASS" signature="ExampleSite()[pri:0, instance:com.selenium.alltopics.ExampleSite@56f4468b]" name="ExampleSite" duration-ms="69660" started-at="2018-10-23T16:42:49Z" finished-at="2018-10-23T16:43:59Z">
+        <test-method status="PASS" signature="footerLinks()[pri:0, instance:com.selenium.Practice.PrintFooterLinks@548a9f61]" name="footerLinks" duration-ms="55082" started-at="2019-01-21T12:39:10Z" finished-at="2019-01-21T12:40:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExampleSite -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.selenium.alltopics.ExampleSite@56f4468b]" name="teardown" is-config="true" duration-ms="7007" started-at="2018-10-23T16:43:59Z" finished-at="2018-10-23T16:44:06Z">
+        </test-method> <!-- footerLinks -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.selenium.Practice.PrintFooterLinks@548a9f61]" name="teardown" is-config="true" duration-ms="4311" started-at="2019-01-21T12:40:05Z" finished-at="2019-01-21T12:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.selenium.alltopics.ExampleSite -->
+      </class> <!-- com.selenium.Practice.PrintFooterLinks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
